@@ -1,3 +1,7 @@
+<p align="right">
+  <a href="./README.md">简体中文</a> | English
+</p>
+
 # Yuandian Open Platform MCP Server
 
 This MCP Server reads the Yuandian Open Platform API catalog on startup and dynamically registers open APIs as MCP tools, allowing MCP-compatible AI clients to directly call legal data and services. Business API requests are forwarded to `https://open.chineselaw.com/open/{routeKey}` and authenticated with the `X-API-Key` header.
@@ -11,7 +15,7 @@ Platform campaign: From April 27, 2026 to July 26, 2026, users receive a monthly
 ## Quick Start
 
 ```bash
-YUANDIAN_API_KEY="your_api_key" npx -y yuandian-mcp-server@latest
+YUANDIAN_API_KEY="your_api_key" npx -y yuandian-mcp-server
 ```
 
 You can also install it in the current project first:
@@ -37,7 +41,7 @@ Node.js 20 or higher is required.
   "mcpServers": {
     "yuandian-mcp-server": {
       "command": "npx",
-      "args": ["-y", "yuandian-mcp-server@latest"],
+      "args": ["-y", "yuandian-mcp-server"],
       "env": {
         "YUANDIAN_API_KEY": "your_api_key"
       }

@@ -1,3 +1,7 @@
+<p align="right">
+  简体中文 | <a href="./README_EN.md">English</a>
+</p>
+
 # 元典开放平台 MCP Server
 
 这个 MCP Server 会在启动时读取元典开放平台接口目录，并把开放接口动态注册成 MCP tool，方便支持 MCP 的 AI 客户端直接调用法律数据与服务。业务接口会转发到 `https://open.chineselaw.com/open/{routeKey}`，并使用 `X-API-Key` 头鉴权。
@@ -11,7 +15,7 @@
 ## 快速开始
 
 ```bash
-YUANDIAN_API_KEY="你的_api_key" npx -y yuandian-mcp-server@latest
+YUANDIAN_API_KEY="你的_api_key" npx -y yuandian-mcp-server
 ```
 
 也可以先安装到当前项目：
@@ -37,7 +41,7 @@ Node.js 版本需为 20 或更高。
   "mcpServers": {
     "yuandian-mcp-server": {
       "command": "npx",
-      "args": ["-y", "yuandian-mcp-server@latest"],
+      "args": ["-y", "yuandian-mcp-server"],
       "env": {
         "YUANDIAN_API_KEY": "你的_api_key"
       }
